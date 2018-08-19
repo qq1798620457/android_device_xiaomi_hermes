@@ -4,11 +4,8 @@ DEVICE_PATH := device/xiaomi/hermes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Get the gsm config
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Inherit from hermes device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
@@ -21,7 +18,7 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_DEVICE := hermes
-PRODUCT_NAME := omni_hermes
+PRODUCT_NAME := device_hermes
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 2
 PRODUCT_MANUFACTURER := Xiaomi
