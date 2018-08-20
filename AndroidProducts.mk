@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-		$(LOCAL_DIR)/du_hermes.mk
+		$(LOCAL_DIR)/du.mk
